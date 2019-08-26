@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+body{
+  font-size:20px;
+  line-height:1.5;
+  padding:0;
+  margin:0;
+  background-color:white;
+}
+
+
+#button1{
+  height:38px;
+  background:white;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+/* Global */
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+.light{
+  padding:15px;
+  /*background-color:#c7cc9f;*/
+  color:black;
+  margin-top:10px;
+  text-align:center;
+}
+
+.light h1{
+  text-transform: uppercase;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+
+/* Header */
+header{
+  font-family: 'Dancing Script', cursive;
+  background-color:#c7cc9f;
+  /*background:url('../images/flowers2.jpg') no-repeat center;*/
+  background-size: 100%;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#90993f 2px solid;
+}
+
+header a{
+  color:white;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding:0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color:white;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+/*header .highlight{
+  color:#8c85cd;
+  font-weight:bold;
+}*/
+
+header a:hover{
+  color:#8c85cd;
+  font-weight:bold;
+}
+
+/*sidebar*/
+aside#sidebar{
+  float:right;
+  width:30%;
+  /*margin-top:10px;*/
+}
+
+/*Contact*/
+.specialrequests input{
+  width:90%;
+  padding:5px;
+}
+
+.specialrequests textarea{
+  width:90%;
+  padding:5px;
+  height:50px;
+}
+
+
+/* Main-col */
+article#mainCol{
+  float:left;
+  width:65%;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:white;
+  background-color:#8c85cd;
+  text-align:center;
+  font-size:15px;
+}
+
+/* Media Queries */
+@media(max-width:768px){
+  header #branding,
+  article#mainCol,
+  aside#sidebar,
+  header nav,
+  header nav li{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+/*  header nav,
+  header nav li{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    float: inherit;
+    margin-top: 10px;
+  }
+*/
+  header{
+    padding-bottom:20px;
+  }
+
+}
